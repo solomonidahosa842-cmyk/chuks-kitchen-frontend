@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Side Styling */
+.branding-side {
+    flex: 1;
+    background: url(../images/food\ \(4\).png) center/cover no-repeat;
+    position: relative;
+    display: none;
+    /* Hidden on mobile */
+}
+
+@media (min-width: 768px) {
+    .branding-side {
+        display: block;
+    }
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 122, 26, 0.85);
+    /* The signature orange tint */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.branding-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Right Side Styling */
+.form-side {
+    flex: 1;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    color: #FF7A1A;
+    font-family: cursive;
+    /* To match the Chuks Kitchen script */
+    font-size: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.btn-continue {
+    width: 100%;
+    background-color: #FF7A1A;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.8rem;
+    color: #888;
+    position: relative;
+}
+
+.btn-social {
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-footer {
+    background-color: #5C3D2E;
+    /* Dark brown from screenshots */
+    color: #FFFFFF;
+    padding: 60px 5% 20px;
+    font-size: 0.9rem;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    max-width: 145px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography */
+.brand-logo {
+    font-family: 'Brush Script MT', cursive;
+    /* Matching the script logo style */
+    color: #FF7A1A;
+    /* Signature orange */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.footer-container h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Navigation Lists */
+.footer-nav ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li,
+.footer-social li,
+.footer-contact p {
+    margin-bottom: 12px;
+}
+
+.footer-nav a,
+.footer-social a,
+.footer-contact a {
+    color: #D1D1D1;
+    /* Slightly muted white for better hierarchy */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+    color: #FF7A1A;
+}
+
+/* Contact/Address Styling */
+.footer-contact address {
+    font-style: normal;
+    line-height: 1.6;
+    color: #D1D1D1;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-bottom small {
+    color: #AAA;
+}
+
+.back-to-top {
+    background-color: #0084FF;
+    /* Blue circle button from screenshot */
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+}
